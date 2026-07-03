@@ -1,0 +1,94 @@
+<doctype!html>
+    <head>
+        <title>DESIGNS BY KIGOS NAVIGATION BAR</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                list-style: none;
+            }
+            body{
+                background-color: lavender;
+                padding:20px;
+                border:1px solid#aaa;
+            }
+            nav{
+                color:rgb(0, 0, 0);
+                background-color: azure;
+                border-radius:30px;
+                padding:20px ;
+            }
+            .navbar {
+                color:blue;
+                display:flex;
+                gap:40px;
+                paddding:20px;
+                position:relative;
+            }
+            .dropdown{
+                display:none;
+                position: relative;
+            }
+            li{
+                padding-left:0;
+                border: 1px solid #aaa;
+                border-radius:6px;
+                cursor: pointer;
+                  position: relative;
+            }
+            li:hover{
+                background-color: bisque;
+            }
+            li:hover .dropdown{
+                display:block;
+                background-color: rgba(15, 0, 127, 0.686);
+            }
+
+            .mini-bar li{
+                display:flex;
+                color:rgb(230, 8, 218);
+                background-color: aquamarine;
+            }
+          
+             .dropdown li:hover .mini-bar{
+                display: flex;
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>DESIGNS by KIGOS portfolio</h1>
+        <nav>
+           <ul class="navbar">
+                <li> Home</li>
+                <li> About
+                    <ul class="dropdown">
+                        <li> Mission</li>
+                        <li> Vission</li>
+                        <li> Core Values</li>
+                    </ul>
+                </li>
+                <li> Services
+                    <ul class="dropdown">
+                        <li> Marketing
+                            <ul class="mini-bar">
+                                <li> SocialMedia Marketing</li>
+                                <li> Email Marketing</li>
+                            </ul>
+                        </li>
+                        <li> Web Design</li>
+                        <li>Mobile Application</li>
+                        <li> Data Analysis</li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </nav>
+        </header>
+            <P>welcome to designs by kigos. A creative space where ideas turn into reality</P>
+            <p>Want to know more about us? click the ABOUT button above. We offer various services which are outlined in the SERVICE sector.</p>
+            <footer>
+            <p>all right reserved|est 2026</p>
+            </footer>
+    </body>
